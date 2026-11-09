@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f5ef">
+  <title>Rock / Paper / Scissors</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="page">
+    <header class="topbar"><a class="brand" href="./" aria-label="Rock Paper Scissors home"><span class="brand-mark">✳</span> little games <span class="brand-sub">/ 001</span></a><span class="edition">A CLASSIC, REIMAGINED</span></header>
+    <main>
+      <section class="intro"><p class="eyebrow"><span class="live-dot"></span> SINGLE PLAYER / VS COMPUTER</p><h1>Make your <em>move.</em></h1><p class="lead">Three choices. One tiny rivalry. Pick your hand and see who wins.</p></section>
+      <section class="game" aria-label="Rock paper scissors game">
+        <div class="game-heading"><span>01 / THE ARENA</span><span id="round-label">ROUND 01</span></div>
+        <div class="arena">
+          <div class="side"><span class="side-label">YOUR HAND</span><div class="hand" id="player-hand" aria-label="Your selected hand">?</div><span class="hand-name" id="player-name">Waiting for you</span></div>
+          <div class="vs">VS</div>
+          <div class="side"><span class="side-label">THE COMPUTER</span><div class="hand" id="computer-hand" aria-label="Computer selected hand">?</div><span class="hand-name" id="computer-name">Keeping it secret</span></div>
+        </div>
+        <div class="result" id="result" role="status" aria-live="polite">Your move. Your rules.</div>
+        <div class="choices" aria-label="Choose a move"><button class="choice" type="button" data-choice="rock"><span class="choice-emoji">✊</span><span>Rock</span><span class="choice-key">01</span></button><button class="choice" type="button" data-choice="paper"><span class="choice-emoji">✋</span><span>Paper</span><span class="choice-key">02</span></button><button class="choice" type="button" data-choice="scissors"><span class="choice-emoji">✌️</span><span>Scissors</span><span class="choice-key">03</span></button></div>
+      </section>
+      <section class="lower"><div class="score"><div class="section-title">02 / THE SCOREBOARD</div><div class="score-values"><div><strong id="wins">00</strong><span>YOU</span></div><div><strong id="ties">00</strong><span>DRAWS</span></div><div><strong id="losses">00</strong><span>COMPUTER</span></div></div><button class="reset" id="reset" type="button">↺ Reset scores</button></div><div class="rules"><div class="section-title">03 / HOUSE RULES</div><p>Rock crushes scissors.<br>Scissors cut paper.<br>Paper covers rock.</p><span>Simple as that. Good luck out there ↗</span></div></section>
+    </main>
+    <footer><span>BUILT FOR FUN. PLAY AS MANY TIMES AS YOU LIKE.</span><span>NO LUCK? TRY AGAIN ✳</span></footer>
+  </div>
+</body>
+</html>
